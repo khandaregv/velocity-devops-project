@@ -14,7 +14,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: manish123
-      MYSQL_DATABASE: database-1
+      MYSQL_DATABASE: mysql-db
       MYSQL_USER: admin
       MYSQL_PASSWORD: manish123
     ports:
