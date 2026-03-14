@@ -6,8 +6,7 @@ services:
       - "8080:8080"
     volumes:
       - "/mnt/wars:/usr/local/tomcat/webapps"
-    networks:
-      - Network-a
+
     
   db:                     
     image: mysql:latest  
@@ -22,11 +21,9 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-    networks:
-      - Network-a
+
 
 volumes:
   mysql_data:
-networks:
-  - Network-a
+
 
